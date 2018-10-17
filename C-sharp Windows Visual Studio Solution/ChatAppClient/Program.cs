@@ -36,6 +36,12 @@ namespace ChatAppClient
                                 {
                                     ColoredConsole.ColoredWriteLine("/// The port is invalid ///", ConsoleColor.Red);
                                 }
+                                catch (System.IO.FileNotFoundException)
+                                {
+                                    ColoredConsole.ColoredWriteLine("/// A dependency was not found (SimpleTCP.dll) ///", ConsoleColor.Red);
+                                    Console.ReadLine();
+                                    Environment.Exit(1);
+                                }
                                 break;
                             }
                             ColoredConsole.ColoredWriteLine("/// You are already connected... ///", ConsoleColor.Red);
@@ -199,9 +205,29 @@ namespace ChatAppClient
                 try
                 {
                     if (GetReply)
-                        Client.WriteLineAndGetReply(msg, TimeSpan.FromSeconds(3));
+                    {
+                        try
+                        {
+                            Client.WriteLineAndGetReply(msg, TimeSpan.FromSeconds(3));
+                        }
+                        catch (System.IO.IOException)
+                        {
+                            ColoredConsole.ColoredWriteLine("/// Connection to the server was lost! ///", ConsoleColor.Red);
+                            Disconnect();
+                        }
+                    }
                     else
-                        Client.WriteLine(msg);
+                    {
+                        try
+                        {
+                            Client.WriteLine(msg);
+                        }
+                        catch (System.IO.IOException)
+                        {
+                            ColoredConsole.ColoredWriteLine("/// Connection to the server was lost! ///", ConsoleColor.Red);
+                            Disconnect();
+                        }
+                    }
                 }
                 catch (InvalidOperationException)
                 {
