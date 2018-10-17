@@ -199,9 +199,29 @@ namespace ChatAppClient
                 try
                 {
                     if (GetReply)
-                        Client.WriteLineAndGetReply(msg, TimeSpan.FromSeconds(3));
+                    {
+                        try
+                        {
+                            Client.WriteLineAndGetReply(msg, TimeSpan.FromSeconds(3));
+                        }
+                        catch (System.IO.IOException)
+                        {
+                            ColoredConsole.ColoredWriteLine("/// Connection to the server was lost! ///", ConsoleColor.Red);
+                            Disconnect();
+                        }
+                    }
                     else
-                        Client.WriteLine(msg);
+                    {
+                        try
+                        {
+                            Client.WriteLine(msg);
+                        }
+                        catch (System.IO.IOException)
+                        {
+                            ColoredConsole.ColoredWriteLine("/// Connection to the server was lost! ///", ConsoleColor.Red);
+                            Disconnect();
+                        }
+                    }
                 }
                 catch (InvalidOperationException)
                 {
