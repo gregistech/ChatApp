@@ -36,6 +36,12 @@ namespace ChatAppClient
                                 {
                                     ColoredConsole.ColoredWriteLine("/// The port is invalid ///", ConsoleColor.Red);
                                 }
+                                catch (System.IO.FileNotFoundException)
+                                {
+                                    ColoredConsole.ColoredWriteLine("/// A dependency was not found (SimpleTCP.dll) ///", ConsoleColor.Red);
+                                    Console.ReadLine();
+                                    Environment.Exit(1);
+                                }
                                 break;
                             }
                             ColoredConsole.ColoredWriteLine("/// You are already connected... ///", ConsoleColor.Red);
