@@ -1,1 +1,190 @@
 ﻿
+[10/18/2018 2:07:37 PM]IP: 192.168.0.3
+
+[10/18/2018 2:07:40 PM]Port: 2619
+
+[10/18/2018 2:07:40 PM]/// Session started ///
+
+[10/18/2018 2:10:24 PM]Client registered from 192.168.0.3 (Current Username: thegergo02)
+
+[10/18/2018 2:10:26 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:10:26 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:10:27 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:10:27 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:10:27 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:10:27 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:11:02 PM]Client registered from 80.99.108.44 (Current Username: Laci)
+
+[10/18/2018 2:11:08 PM]/// Message Received From Laci: " Message  " ///
+
+[10/18/2018 2:11:08 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:11:18 PM]/// Message Received From Laci: " Test Message " ///
+
+[10/18/2018 2:11:18 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:13:10 PM]Client registered from 192.168.0.3 (Current Username: thegergo02)
+
+[10/18/2018 2:13:13 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:13:13 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:13:51 PM]/// Message Received From Laci: " asdf " ///
+
+[10/18/2018 2:13:51 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:14:00 PM]/// Message Received From Laci: " asdfasdfasdsadfasdffasdd " ///
+
+[10/18/2018 2:14:00 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:16:40 PM]/// Message Received From Laci: " asdfasdafdaafa " ///
+
+[10/18/2018 2:16:40 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:18:09 PM]/// Message Received From Laci: "  cfr ffc d6zv fv " ///
+
+[10/18/2018 2:18:09 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:18:19 PM]/// Message Received From Laci: " rftgdefrfgtrdfc xfgvt " ///
+
+[10/18/2018 2:18:19 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:18:20 PM]Client registered from 192.168.0.3 (Current Username: thegergo02)
+
+[10/18/2018 2:18:28 PM]/// Message Received From thegergo02: " tetetet " ///
+
+[10/18/2018 2:18:28 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:18:30 PM]/// Message Received From thegergo02: " test " ///
+
+[10/18/2018 2:18:30 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:19:16 PM]/// Message Received From Laci: " rf65trftg5f56f666666666666666z76hurt6i8erd " ///
+
+[10/18/2018 2:19:16 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:19:24 PM]/// Message Received From Laci: " XD " ///
+
+[10/18/2018 2:19:24 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:23:36 PM]Client registered from 192.168.0.3 (Current Username: thegergo02)
+
+[10/18/2018 2:23:39 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:23:39 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:23:39 PM]/// Message Received From thegergo02: " asd " ///
+
+[10/18/2018 2:23:39 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:27 PM]Client registered from 80.99.108.44 (Current Username: Laci2)
+
+[10/18/2018 2:24:35 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:35 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:35 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:35 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:35 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:35 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:36 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:36 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:36 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:36 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:36 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:36 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:36 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:36 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:37 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:37 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:37 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:37 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:37 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:37 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:38 PM]/// Message Received From Laci2: " as " ///
+
+[10/18/2018 2:24:38 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:38 PM]/// Message Received From Laci2: " dasd " ///
+
+[10/18/2018 2:24:38 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:38 PM]/// Message Received From Laci2: " as " ///
+
+[10/18/2018 2:24:38 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:38 PM]/// Message Received From Laci2: " da " ///
+
+[10/18/2018 2:24:38 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:39 PM]/// Message Received From Laci2: " sdas " ///
+
+[10/18/2018 2:24:39 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:39 PM]/// Message Received From Laci2: " dasd " ///
+
+[10/18/2018 2:24:39 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:39 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:39 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:40 PM]/// Message Received From Laci2: " as " ///
+
+[10/18/2018 2:24:40 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:41 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:41 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:41 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:41 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:41 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:41 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:41 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:41 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:42 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:42 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:42 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:42 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:42 PM]/// Message Received From Laci2: " asd " ///
+
+[10/18/2018 2:24:42 PM]/// Broadcasting it to all client! ///
+
+[10/18/2018 2:24:45 PM]/// Message Received From Laci2: " clear " ///
+
+[10/18/2018 2:24:45 PM]/// Broadcasting it to all client! ///

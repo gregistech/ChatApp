@@ -7,54 +7,110 @@ namespace ChatAppClient
 {
     class Program
     {
+        private static int Connect(ClientLogic MainClient,string ip, string port)
+        {
+            if (!MainClient.IsConnected())
+            {
+                try
+                {
+                    MainClient.Connect(ip, int.Parse(port));
+                    return 0;
+                }
+                catch (FormatException)
+                {
+                    return 1;
+                }
+                catch (System.IO.FileNotFoundException)
+                {
+                    return 2;
+                }
+            }
+            return 3;
+        }
+
+        private static int Disconnect(ClientLogic MainClient)
+        {
+            if (MainClient.IsConnected())
+            {
+                MainClient.Disconnect();
+                return 0;
+            }
+            return 1;
+        }
+
+        private static int Register(ClientLogic MainClient)
+        {
+            if (MainClient.IsConnected())
+            {
+                ColoredConsole.ColoredWrite("Username: ", ConsoleColor.Cyan);
+                MainClient.Send("&&@@@///" + Console.ReadLine() + "&&@@@///", true);
+                return 0;
+            }
+            return 1;
+        }
+
         static void Main(string[] args)
         {
             String cmd;
             var MainClient = new ClientLogic();
-            string ip;
-            for (; ; )
+            for (;;)
             {
                 cmd = Console.ReadLine();
                 switch (cmd)
                 {
                     case "connect":
                         {
-                            if (!MainClient.IsConnected())
+                            ColoredConsole.ColoredWrite("IP: ", ConsoleColor.Cyan);
+                            string ip = Console.ReadLine();
+
+                            ColoredConsole.ColoredWrite("Port: ", ConsoleColor.Cyan);
+                            string port = Console.ReadLine();
+
+                            int returnCode = Connect(MainClient, ip, port);
+                            switch (returnCode)
                             {
-                                ColoredConsole.ColoredWrite("IP: ", ConsoleColor.Cyan);
-                                ip = Console.ReadLine();
-
-                                ColoredConsole.ColoredWrite("Port: ", ConsoleColor.Cyan);
-                                string port = Console.ReadLine();
-
-                                try
-                                {
-                                    MainClient.Connect(ip, Int32.Parse(port));
-                                }
-                                catch (FormatException)
-                                {
-                                    ColoredConsole.ColoredWriteLine("/// The port is invalid ///", ConsoleColor.Red);
-                                }
-                                catch (System.IO.FileNotFoundException)
-                                {
-                                    ColoredConsole.ColoredWriteLine("/// A dependency was not found (SimpleTCP.dll) ///", ConsoleColor.Red);
-                                    Console.ReadLine();
-                                    Environment.Exit(1);
-                                }
-                                break;
+                                case 0:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// Connected To Server ///", ConsoleColor.Green);
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// The port is invalid ///", ConsoleColor.Red);
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// A dependency was not found (SimpleTCP.dll) ///", ConsoleColor.Red);
+                                        Console.ReadLine();
+                                        Environment.Exit(1);
+                                        break;
+                                    }
+                                case 3:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// You are already connected... ///", ConsoleColor.Red);
+                                        break;
+                                    }
                             }
-                            ColoredConsole.ColoredWriteLine("/// You are already connected... ///", ConsoleColor.Red);
                             break;
                         }
                     case "disconnect":
                         {
-                            if (MainClient.IsConnected())
+                            int returnCode = Disconnect(MainClient);
+                            switch (returnCode)
                             {
-                                MainClient.Disconnect();
-                                ColoredConsole.ColoredWriteLine("/// You successfully disconnected. ///", ConsoleColor.Yellow);
-                                break;
+                                case 0:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// You successfully disconnected. ///", ConsoleColor.Yellow);
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// How can you disconnect if you aren't connected? ///", ConsoleColor.Red);
+                                        break;
+                                    }
                             }
-                            ColoredConsole.ColoredWriteLine("/// How can you disconnect if you aren't connected? ///", ConsoleColor.Red);
+
                             break;
                         }
                     case "exit":
@@ -104,13 +160,20 @@ namespace ChatAppClient
                         }
                     case "register":
                         {
-                            if (MainClient.IsConnected())
+                            int returnCode = Register(MainClient);
+                            switch (returnCode)
                             {
-                                ColoredConsole.ColoredWrite("Username: ", ConsoleColor.Cyan);
-                                MainClient.Send("&&@@@///" + Console.ReadLine() + "&&@@@///", true);
-                                break;
+                                case 0:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// You successfully registered! ///", ConsoleColor.Green);
+                                        break;
+                                    }
+                                case 1:
+                                    {
+                                        ColoredConsole.ColoredWriteLine("/// First you have to connect... ///", ConsoleColor.Red);
+                                        break;
+                                    }
                             }
-                            ColoredConsole.ColoredWriteLine("/// First you have to connect... ///", ConsoleColor.Red);
                             break;
                         }
                     case "clear":
