@@ -40,7 +40,6 @@ namespace ChatAppClient
             {
                 Client.Connect(ip, port);
                 Connected = true;
-                ColoredConsole.ColoredWriteLine("/// Connected To Server ///", ConsoleColor.Green);
             }
             catch (System.Net.Sockets.SocketException)
             {
