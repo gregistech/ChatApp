@@ -48,6 +48,7 @@ namespace ChatAppServer
                 }
                 else
                 {
+                    Console.WriteLine(msg);
                     e.ReplyLine("Please register. (register command)");
                 }
             }
@@ -79,7 +80,7 @@ namespace ChatAppServer
             server = new SimpleTcpServer
             {
                 Delimiter = 0x13,
-                StringEncoder = Encoding.Unicode
+                StringEncoder = Encoding.UTF8
             };
             server.DataReceived += Server_DataReceived;
             System.Net.IPAddress ip = System.Net.IPAddress.Parse(IP);

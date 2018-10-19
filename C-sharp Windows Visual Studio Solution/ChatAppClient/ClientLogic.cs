@@ -33,7 +33,7 @@ namespace ChatAppClient
         {
             Client = new SimpleTcpClient
             {
-                StringEncoder = Encoding.Unicode
+                StringEncoder = Encoding.UTF8
             };
             Client.DataReceived += Client_DataReceived;
             try
