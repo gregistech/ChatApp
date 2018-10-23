@@ -1,6 +1,8 @@
 # ChatApp
 This application is written in C# (Windows Console Application), for the "&lt;19 Szabadfogású Számítógép".
 
+[![codecov](https://codecov.io/gh/thegergo02/ChatApp/branch/master/graph/badge.svg)](https://codecov.io/gh/thegergo02/ChatApp)
+
 ## Windows Solution
 ### Client [![build | stable](https://img.shields.io/badge/build-stable-green.svg)](https://github.com/thegergo02/ChatApp/releases/tag/v0.1)
 If you want to connect to a server, you have to type in "**connect**".
