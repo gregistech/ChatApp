@@ -84,7 +84,15 @@ namespace ChatAppServer
             };
             server.DataReceived += Server_DataReceived;
             System.Net.IPAddress ip = System.Net.IPAddress.Parse(IP);
-            server.Start(ip, port);
+            try
+            {
+                server.Start(ip, port);
+            }
+            catch (SocketException)
+            {
+                Console.WriteLine("/// A server is running on this port, please use another one port, or stop the other server. ///");
+                WriteToLog("/// A server is running on this port, please use another one port, or stop the other server. ///");
+            }
             Console.WriteLine("/// Session started ///");
             WriteToLog("/// Session started ///");
         }
